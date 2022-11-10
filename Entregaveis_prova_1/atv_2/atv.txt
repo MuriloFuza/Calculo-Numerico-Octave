@@ -1,0 +1,285 @@
+1. Seja um sistema de aritmética flutuante de quatro dígitos, base decimal e com acumulador de precisão dupla. Dados os números:
+Efetue as seguintes operações e obtenha o erro relativo no resultado, supondo que x, y e z estão exatamente representados
+
+a. x + y + z = 0.981900 -- Erro relativo: 0.000000
+b. x - y - z = 0.464900 -- Erro relativo: -0.000000
+c. x / z = 2.798453 -- Erro relativo: 0.000019
+d. (x * y) / z = 0.000000-- Erro relativo: Inf
+
+2. Considere uma máquina cujo sistema de representação é definido por: 𝛃 = 10, t = 4, m = -5 e M = 5. Pede-se:
+
+a. Qual o menor e o maior número em módulo representados nesta máquina? R = 0.1000 . 10^-5  e 0.9999 . 10^5
+
+b. Como será representado o número 73,758 nesta máquina, se for usado o arredondamento? E se for usado truncamento?
+ arredondamento = 0.74 . 10^2 - truncamento = 0.738 . 10^2
+
+c. Se a = 42450 e b = 3 qual o resultado de a + b? 
+Resposta: 0.424530 . 10^5
+
+d. Nesta máquina, qual o resultado da soma: 𝑆 = 42450 ... 
+ Resposta = 0.4245
+
+soma = 3.0000e-04
+
+
+e. Nesta máquina, qual o resultado da soma: 𝑆 = ... 
+ Resposta = 0.4248
+
+3. Escreva um programa em Octave para obter o resultado da seguinte operação: 
+a. R = -0.100000
+b. R = -0.125000
+
+4. A precisão de máquina é definida como sendo o menor número positivo em aritmética de ponto flutuante 𝛆, tal que (1+ 𝛆) > 1. Este número depende totalmente do sistema de representação da máquina: base numérica, total de dígitos na mantissa, da forma como são realizadas as operações e do compilador utilizado. É importante conhecermos a precisão da máquina porque em vários algoritmos precisamos fornecer como dado de entrada um valor positivo, próximo de zero, para ser usado em teste de comparação com zero. O algoritmo a seguir estima a precisão da máquina:
+
+A. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ Single Precision = 1.19209e-07 & Double Precision = 2.22045e-16
+
+B. Devido uma divisão ter maiores chances de gerar um número de casas decimais 
+
+C. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ (Não deixei inserindo pois são 3 valores para utilizar então ja adiantei)
+VAL como 10, 17, 100 = 1.77636e-15 - 1.77636e-15 - 1.77636e-15 ... O valor da precisão ira ser alterado ao trocar o valor de VAL, sendo que quanto maior o valor de VAl, mais iterações serão realizadas
+
+5. Localize graficamente as raízes das equações a seguir:a. 4×𝑐𝑜𝑠(𝑥)−𝑒^2𝑥 = 0b.  x/2 - tg(x) c.  1 - x * ln(x) d. 2^x - 3*x d. x^3 + x - 1000 2.9990
+
+
+6. Escreva uma função em Octave para isolamento das raízes. A função deve receber o intervalo [a, b] e o passo da iteração p. Utilize o Teorema de Cauchy-Bolzano (f(a)*f(b) < 0) para determinar quantas raízes há entre o intervalo definido. A função deve exibir uma mensagem informando o total de raízes existentes no intervalo e, caso não exista, esse fato também deve ser informado.
+
+ Resposta: 1 raizes
+
+(Professor pediu essa para fazer duas a mão) 7.Aplique o método da bisseção à equação 𝑥3 − 2𝑥2 + 3𝑥 + 10 = 0. Construa o gráfico da função e faça a análise da variação de sinal para auxiliar na escolha do intervalo [a, b].intervalo a = 2 b = 3 -- Tol 10^-3
+Primeira Iteração
+F2 = 16 --- F3 = 28
+x = 2.5
+fx = 20.625 -- fa = 16
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.5 e b = 3
+
+Segunda Iteração
+x = 2.75
+fx = 23.922 -- fa = 20.625
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.75 e b = 3
+Duas iterações feitas
+
+
+Número de iteração é: 13, com x = 2.99993896 
+
+
+8. Aplique o método de Newton-Raphson à equação: 𝑥3 − 2𝑥^2 + 3𝑥 + 10 = 0 𝑐𝑜𝑚 𝑥0 = 1,9
+Resposta: x = -1.340613, k = 51. Seja um sistema de aritmética flutuante de quatro dígitos, base decimal e com acumulador de precisão dupla. Dados os números:
+Efetue as seguintes operações e obtenha o erro relativo no resultado, supondo que x, y e z estão exatamente representados
+
+a. x + y + z = 0.981900 -- Erro relativo: 0.000000
+b. x - y - z = 0.464900 -- Erro relativo: -0.000000
+c. x / z = 2.798453 -- Erro relativo: 0.000019
+d. (x * y) / z = 0.000000-- Erro relativo: Inf
+
+2. Considere uma máquina cujo sistema de representação é definido por: 𝛃 = 10, t = 4, m = -5 e M = 5. Pede-se:
+
+a. Qual o menor e o maior número em módulo representados nesta máquina? R = 0.1000 . 10^-5  e 0.9999 . 10^5
+
+b. Como será representado o número 73,758 nesta máquina, se for usado o arredondamento? E se for usado truncamento?
+ arredondamento = 0.74 . 10^2 - truncamento = 0.738 . 10^2
+
+c. Se a = 42450 e b = 3 qual o resultado de a + b? 
+Resposta: 0.424530 . 10^5
+
+d. Nesta máquina, qual o resultado da soma: 𝑆 = 42450 ... 
+ Resposta = 0.4245
+
+soma = 3.0000e-04
+
+
+e. Nesta máquina, qual o resultado da soma: 𝑆 = ... 
+ Resposta = 0.4248
+
+3. Escreva um programa em Octave para obter o resultado da seguinte operação: 
+a. R = -0.100000
+b. R = -0.125000
+
+4. A precisão de máquina é definida como sendo o menor número positivo em aritmética de ponto flutuante 𝛆, tal que (1+ 𝛆) > 1. Este número depende totalmente do sistema de representação da máquina: base numérica, total de dígitos na mantissa, da forma como são realizadas as operações e do compilador utilizado. É importante conhecermos a precisão da máquina porque em vários algoritmos precisamos fornecer como dado de entrada um valor positivo, próximo de zero, para ser usado em teste de comparação com zero. O algoritmo a seguir estima a precisão da máquina:
+
+A. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ Single Precision = 1.19209e-07 & Double Precision = 2.22045e-16
+
+B. Devido uma divisão ter maiores chances de gerar um número de casas decimais 
+
+C. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ (Não deixei inserindo pois são 3 valores para utilizar então ja adiantei)
+VAL como 10, 17, 100 = 1.77636e-15 - 1.77636e-15 - 1.77636e-15 ... O valor da precisão ira ser alterado ao trocar o valor de VAL, sendo que quanto maior o valor de VAl, mais iterações serão realizadas
+
+5. Localize graficamente as raízes das equações a seguir:a. 4×𝑐𝑜𝑠(𝑥)−𝑒^2𝑥 = 0b.  x/2 - tg(x) c.  1 - x * ln(x) d. 2^x - 3*x d. x^3 + x - 1000 2.9990
+
+
+6. Escreva uma função em Octave para isolamento das raízes. A função deve receber o intervalo [a, b] e o passo da iteração p. Utilize o Teorema de Cauchy-Bolzano (f(a)*f(b) < 0) para determinar quantas raízes há entre o intervalo definido. A função deve exibir uma mensagem informando o total de raízes existentes no intervalo e, caso não exista, esse fato também deve ser informado.
+
+ Resposta: 1 raizes
+
+(Professor pediu essa para fazer duas a mão) 7.Aplique o método da bisseção à equação 𝑥3 − 2𝑥2 + 3𝑥 + 10 = 0. Construa o gráfico da função e faça a análise da variação de sinal para auxiliar na escolha do intervalo [a, b].intervalo a = 2 b = 3 -- Tol 10^-3
+Primeira Iteração
+F2 = 16 --- F3 = 28
+x = 2.5
+fx = 20.625 -- fa = 16
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.5 e b = 3
+
+Segunda Iteração
+x = 2.75
+fx = 23.922 -- fa = 20.625
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.75 e b = 3
+Duas iterações feitas
+
+
+Número de iteração é: 13, com x = 2.99993896 
+
+
+8. Aplique o método de Newton-Raphson à equação: 𝑥3 − 2𝑥^2 + 3𝑥 + 10 = 0 𝑐𝑜𝑚 𝑥0 = 1,9
+Resposta: x = -1.340613, k = 51. Seja um sistema de aritmética flutuante de quatro dígitos, base decimal e com acumulador de precisão dupla. Dados os números:
+Efetue as seguintes operações e obtenha o erro relativo no resultado, supondo que x, y e z estão exatamente representados
+
+a. x + y + z = 0.981900 -- Erro relativo: 0.000000
+b. x - y - z = 0.464900 -- Erro relativo: -0.000000
+c. x / z = 2.798453 -- Erro relativo: 0.000019
+d. (x * y) / z = 0.000000-- Erro relativo: Inf
+
+2. Considere uma máquina cujo sistema de representação é definido por: 𝛃 = 10, t = 4, m = -5 e M = 5. Pede-se:
+
+a. Qual o menor e o maior número em módulo representados nesta máquina? R = 0.1000 . 10^-5  e 0.9999 . 10^5
+
+b. Como será representado o número 73,758 nesta máquina, se for usado o arredondamento? E se for usado truncamento?
+ arredondamento = 0.74 . 10^2 - truncamento = 0.738 . 10^2
+
+c. Se a = 42450 e b = 3 qual o resultado de a + b? 
+Resposta: 0.424530 . 10^5
+
+d. Nesta máquina, qual o resultado da soma: 𝑆 = 42450 ... 
+ Resposta = 0.4245
+
+soma = 3.0000e-04
+
+
+e. Nesta máquina, qual o resultado da soma: 𝑆 = ... 
+ Resposta = 0.4248
+
+3. Escreva um programa em Octave para obter o resultado da seguinte operação: 
+a. R = -0.100000
+b. R = -0.125000
+
+4. A precisão de máquina é definida como sendo o menor número positivo em aritmética de ponto flutuante 𝛆, tal que (1+ 𝛆) > 1. Este número depende totalmente do sistema de representação da máquina: base numérica, total de dígitos na mantissa, da forma como são realizadas as operações e do compilador utilizado. É importante conhecermos a precisão da máquina porque em vários algoritmos precisamos fornecer como dado de entrada um valor positivo, próximo de zero, para ser usado em teste de comparação com zero. O algoritmo a seguir estima a precisão da máquina:
+
+A. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ Single Precision = 1.19209e-07 & Double Precision = 2.22045e-16
+
+B. Devido uma divisão ter maiores chances de gerar um número de casas decimais 
+
+C. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ (Não deixei inserindo pois são 3 valores para utilizar então ja adiantei)
+VAL como 10, 17, 100 = 1.77636e-15 - 1.77636e-15 - 1.77636e-15 ... O valor da precisão ira ser alterado ao trocar o valor de VAL, sendo que quanto maior o valor de VAl, mais iterações serão realizadas
+
+5. Localize graficamente as raízes das equações a seguir:a. 4×𝑐𝑜𝑠(𝑥)−𝑒^2𝑥 = 0b.  x/2 - tg(x) c.  1 - x * ln(x) d. 2^x - 3*x d. x^3 + x - 1000 2.9990
+
+
+6. Escreva uma função em Octave para isolamento das raízes. A função deve receber o intervalo [a, b] e o passo da iteração p. Utilize o Teorema de Cauchy-Bolzano (f(a)*f(b) < 0) para determinar quantas raízes há entre o intervalo definido. A função deve exibir uma mensagem informando o total de raízes existentes no intervalo e, caso não exista, esse fato também deve ser informado.
+
+ Resposta: 1 raizes
+
+(Professor pediu essa para fazer duas a mão) 7.Aplique o método da bisseção à equação 𝑥3 − 2𝑥2 + 3𝑥 + 10 = 0. Construa o gráfico da função e faça a análise da variação de sinal para auxiliar na escolha do intervalo [a, b].intervalo a = 2 b = 3 -- Tol 10^-3
+Primeira Iteração
+F2 = 16 --- F3 = 28
+x = 2.5
+fx = 20.625 -- fa = 16
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.5 e b = 3
+
+Segunda Iteração
+x = 2.75
+fx = 23.922 -- fa = 20.625
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.75 e b = 3
+Duas iterações feitas
+
+
+Número de iteração é: 13, com x = 2.99993896 
+
+
+8. Aplique o método de Newton-Raphson à equação: 𝑥3 − 2𝑥^2 + 3𝑥 + 10 = 0 𝑐𝑜𝑚 𝑥0 = 1,9
+Resposta: x = -1.340613, k = 51. Seja um sistema de aritmética flutuante de quatro dígitos, base decimal e com acumulador de precisão dupla. Dados os números:
+Efetue as seguintes operações e obtenha o erro relativo no resultado, supondo que x, y e z estão exatamente representados
+
+a. x + y + z = 0.981900 -- Erro relativo: 0.000000
+b. x - y - z = 0.464900 -- Erro relativo: -0.000000
+c. x / z = 2.798453 -- Erro relativo: 0.000019
+d. (x * y) / z = 0.000000-- Erro relativo: Inf
+
+2. Considere uma máquina cujo sistema de representação é definido por: 𝛃 = 10, t = 4, m = -5 e M = 5. Pede-se:
+
+a. Qual o menor e o maior número em módulo representados nesta máquina? R = 0.1000 . 10^-5  e 0.9999 . 10^5
+
+b. Como será representado o número 73,758 nesta máquina, se for usado o arredondamento? E se for usado truncamento?
+ arredondamento = 0.74 . 10^2 - truncamento = 0.738 . 10^2
+
+c. Se a = 42450 e b = 3 qual o resultado de a + b? 
+Resposta: 0.424530 . 10^5
+
+d. Nesta máquina, qual o resultado da soma: 𝑆 = 42450 ... 
+ Resposta = 0.4245
+
+soma = 3.0000e-04
+
+
+e. Nesta máquina, qual o resultado da soma: 𝑆 = ... 
+ Resposta = 0.4248
+
+3. Escreva um programa em Octave para obter o resultado da seguinte operação: 
+a. R = -0.100000
+b. R = -0.125000
+
+4. A precisão de máquina é definida como sendo o menor número positivo em aritmética de ponto flutuante 𝛆, tal que (1+ 𝛆) > 1. Este número depende totalmente do sistema de representação da máquina: base numérica, total de dígitos na mantissa, da forma como são realizadas as operações e do compilador utilizado. É importante conhecermos a precisão da máquina porque em vários algoritmos precisamos fornecer como dado de entrada um valor positivo, próximo de zero, para ser usado em teste de comparação com zero. O algoritmo a seguir estima a precisão da máquina:
+
+A. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ Single Precision = 1.19209e-07 & Double Precision = 2.22045e-16
+
+B. Devido uma divisão ter maiores chances de gerar um número de casas decimais 
+
+C. (Talvez tenha que trocar para f bug do sistema, se apresentar normal desconsidere)
+ (Não deixei inserindo pois são 3 valores para utilizar então ja adiantei)
+VAL como 10, 17, 100 = 1.77636e-15 - 1.77636e-15 - 1.77636e-15 ... O valor da precisão ira ser alterado ao trocar o valor de VAL, sendo que quanto maior o valor de VAl, mais iterações serão realizadas
+
+5. Localize graficamente as raízes das equações a seguir:a. 4×𝑐𝑜𝑠(𝑥)−𝑒^2𝑥 = 0b.  x/2 - tg(x) c.  1 - x * ln(x) d. 2^x - 3*x d. x^3 + x - 1000 2.9990
+
+
+6. Escreva uma função em Octave para isolamento das raízes. A função deve receber o intervalo [a, b] e o passo da iteração p. Utilize o Teorema de Cauchy-Bolzano (f(a)*f(b) < 0) para determinar quantas raízes há entre o intervalo definido. A função deve exibir uma mensagem informando o total de raízes existentes no intervalo e, caso não exista, esse fato também deve ser informado.
+
+ Resposta: 1 raizes
+
+(Professor pediu essa para fazer duas a mão) 7.Aplique o método da bisseção à equação 𝑥3 − 2𝑥2 + 3𝑥 + 10 = 0. Construa o gráfico da função e faça a análise da variação de sinal para auxiliar na escolha do intervalo [a, b].intervalo a = 2 b = 3 -- Tol 10^-3
+Primeira Iteração
+F2 = 16 --- F3 = 28
+x = 2.5
+fx = 20.625 -- fa = 16
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.5 e b = 3
+
+Segunda Iteração
+x = 2.75
+fx = 23.922 -- fa = 20.625
+fx é diferente de 0 e (b-a) / 2 é maior que a tolenracia
+elseif nn entra pois fa * fx é maior que 0
+a = 2.75 e b = 3
+Duas iterações feitas
+
+
+Número de iteração é: 13, com x = 2.99993896 
+
+
+8. Aplique o método de Newton-Raphson à equação: 𝑥3 − 2𝑥^2 + 3𝑥 + 10 = 0 𝑐𝑜𝑚 𝑥0 = 1,9
+Resposta: x = -1.340613, k = 5

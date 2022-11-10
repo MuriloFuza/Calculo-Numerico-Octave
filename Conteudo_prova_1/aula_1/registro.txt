@@ -1,0 +1,4 @@
+>> x = 28;
+>> v = sin(x)^2 + cos(x) ^ 2
+v = 1
+>> diary off

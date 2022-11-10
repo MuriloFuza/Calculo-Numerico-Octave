@@ -1,0 +1,143 @@
+Exercicio 1
+
+C =
+
+   0   0
+   0   0
+
+D =
+
+   4   3
+   5   3
+
+E =
+
+    1    2
+    9   16
+
+
+ O resultado esperado em C é uma matriz com zeros pois é subtração de matrizes iguais, em D o resultado ja varia pois possui multiplicação por caracter na segunda etapa e em E o resultado é a elevação de todos os elementos de A para B. Resultados acima!
+
+Exercicio 2
+
+a =
+
+   2   3   0   0   0   0   0   0   0   0
+   0   2   3   0   0   0   0   0   0   0
+   0   0   2   3   0   0   0   0   0   0
+   0   0   0   2   3   0   0   0   0   0
+   0   0   0   0   2   3   0   0   0   0
+   0   0   0   0   0   2   3   0   0   0
+   0   0   0   0   0   0   2   3   0   0
+   0   0   0   0   0   0   0   2   3   0
+   0   0   0   0   0   0   0   0   2   3
+   0   0   0   0   0   0   0   0   0   2
+
+
+ A matriz resultado está acima e sim funcionaria para uma de ordem 10.000 pois percorre as diagonais principais e superior!
+
+Exercicio 3
+
+A =
+
+   2   3   4   5
+   3   4   5   6
+   4   5   6   7
+   5   6   7   8
+
+a. Matriz B com apenas linhas pares de A
+B =
+
+   3   4   5   6
+   5   6   7   8
+
+
+
+b. Matriz C com apenas colunas ímpares de A
+C =
+
+   2   4
+   3   5
+   4   6
+   5   7
+
+
+
+c. Submatriz D formadas pelas primeiras K linhas e colunas de A
+D =
+
+   2   3
+   3   4
+
+
+
+d. Submatriz E formada retirando-se uma borda de largura k de A
+E =
+
+   4   5
+   5   6
+
+Exercicio 4 - O PLOT VAI DAR ERRO NO DIARY MAS PLOTA NORMALMENTE
+
+warning: fplot: FN is not a vectorized function which reduces performance
+warning: called from
+    fplot at line 175 column 5
+    gerar_respostas_atividadeTXT at line 65 column 1
+    run at line 78 column 7
+
+
+
+Exercicio - 5 - Função aproxpi
+ans = 3.141592457567436
+
+
+Exercicio - 6
+a. x = 37
+x = 100101
+
+b. y = 2345
+y = 100100101001
+
+c. z = 0,1217
+z = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 1 0 0 1 1 1 1 0 1 1 1 0 1 1 0]
+
+
+Exercicio - 7
+a. x = (101101)
+x = 45
+
+b. y = (11011011)
+y = 219
+
+c. x = (0,1101)
+
+d. x = (0,1111111101)
+
+
+Exercicio - 8
+a. Octal -> Decimal
+ function v = t(a)
+ v = [];
+ o = num2str(a); 
+ d=0;
+ f = fliplr(o)
+ for p = 0 : length(o) - 1
+    d = d + str2num(f(p+1)) * 8^p;
+ endfor endfunction 
+
+b. Decimal -> Binário 
+function v = x(a) 
+ v = fix(rem(a * pow2(-(16-1):25),2))
+ endfunction
+
+c. Binário -> Decimal 
+function v = x(a) 
+  a * pow2(16 - 1 : -1 : -25)
+ endfunction
+
+
+
+Exercicio - 9
+
+
+Exercicio - 10
