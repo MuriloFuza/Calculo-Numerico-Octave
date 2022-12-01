@@ -1,0 +1,239 @@
+octave:38> diary on
+octave:39> [x,k] = metodo_de_newton_nl(F,J,x,tol,Kmax)
+Função Fx: Fx =
+
+   164.41
+   479.94
+
+
+Norma infinita: Dr = 1.0010
+
+Verica  k <= kMax && norm(Fx, Inf) > tols(2) && Dr > tols(1)
+continuamos: 
+Norma infinita de Fx: ans = 479.94
+
+k = 1
+Incrementa k: 1
+S: s = 14.417
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 8.5349
+
+k = 2
+Incrementa k: 2
+S: s = -5.1561
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 78.897
+
+k = 3
+Incrementa k: 3
+S: s = -8.9673
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 461.96
+
+k = 4
+Incrementa k: 4
+S: s = 13.079
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 10.808
+
+k = 5
+Incrementa k: 5
+S: s = -6.8997
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 163.52
+
+k = 6
+Incrementa k: 6
+S: s = -6.0141
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 451.97
+
+k = 7
+Incrementa k: 7
+S: s = 12.342
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 16.223
+
+k = 8
+Incrementa k: 8
+S: s = -7.6451
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 214.31
+
+k = 9
+Incrementa k: 9
+S: s = -3.3955
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 377.26
+
+k = 10
+Incrementa k: 10
+S: s = 6.9799
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 92.325
+
+k = 11
+Incrementa k: 11
+S: s = -8.6834
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 476.39
+
+k = 12
+Incrementa k: 12
+S: s = 14.152
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 8.9944
+
+k = 13
+Incrementa k: 13
+S: s = -5.5421
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 94.315
+
+k = 14
+Incrementa k: 14
+S: s = -8.6333
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 477.84
+
+k = 15
+Incrementa k: 15
+S: s = 14.260
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 8.8172
+
+k = 16
+Incrementa k: 16
+S: s = -5.3868
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 87.911
+
+k = 17
+Incrementa k: 17
+S: s = -8.7876
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 472.56
+
+k = 18
+Incrementa k: 18
+S: s = 13.867
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 9.3917
+
+k = 19
+Incrementa k: 19
+S: s = -5.9349
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 111.79
+
+k = 20
+Incrementa k: 20
+S: s = -8.1184
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+continuamos: 
+Norma infinita de Fx: ans = 484.07
+
+k = 21
+Incrementa k: 21
+S: s = 14.726
+
+X -> x+s: 
+Norma infinita de S: 
+Atualiza Fx: 
+x =
+
+   1.4530
+  -3.0470
+
+k = 21
+octave:40> diary off
+
+x0 = [1.5; -3]
+F =  @(x,y) x^2 - 4*x + 4*y + 8
+F2 = @(x,y) x^2 + y^2 - 8
+
+F(1.5 , -3)
+F2(1.5, -3)
+
+ans = -7.7500
+ans = 3.2500
+
